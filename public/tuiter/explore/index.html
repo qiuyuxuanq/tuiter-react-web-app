@@ -5,58 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" 
-    rel="stylesheet"/>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="../../providers/bootswatch/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="index.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+    crossorigin="anonymous"></script>
+    <script src="./index.js" type="module"></script>    
 </head>
 <body>
-    <div class="row align-items-start" style="width: 80vw;margin: 0 auto;">
-        <div class="col-2">
+    <div class="row align-items-start" id="wd-explore"></div>
+        <div class="col-2 left_menu">
             <nav class="nav flex-column nav-pills">
-                <a class="nav-link" aria-current="page" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-fill" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M15.528 2.973a.75.75 0 0 1 .472.696v8.662a.75.75 0 0 1-.472.696l-7.25 2.9a.75.75 0 0 1-.557 0l-7.25-2.9A.75.75 0 0 1 0 12.331V3.669a.75.75 0 0 1 .471-.696L7.443.184l.004-.001.274-.11a.75.75 0 0 1 .558 0l.274.11.004.001 6.971 2.789Zm-1.374.527L8 5.962 1.846 3.5 1 3.839v.4l6.5 2.6v7.922l.5.2.5-.2V6.84l6.5-2.6v-.4l-.846-.339Z"/>
-                  </svg><span class="d-none d-md-block">Home</span></a>
-                <a class="nav-link  active" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-fill" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M15.528 2.973a.75.75 0 0 1 .472.696v8.662a.75.75 0 0 1-.472.696l-7.25 2.9a.75.75 0 0 1-.557 0l-7.25-2.9A.75.75 0 0 1 0 12.331V3.669a.75.75 0 0 1 .471-.696L7.443.184l.004-.001.274-.11a.75.75 0 0 1 .558 0l.274.11.004.001 6.971 2.789Zm-1.374.527L8 5.962 1.846 3.5 1 3.839v.4l6.5 2.6v7.922l.5.2.5-.2V6.84l6.5-2.6v-.4l-.846-.339Z"/>
-                  </svg><span class="d-none d-md-block">Explore</span></a>
-                <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-fill" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M15.528 2.973a.75.75 0 0 1 .472.696v8.662a.75.75 0 0 1-.472.696l-7.25 2.9a.75.75 0 0 1-.557 0l-7.25-2.9A.75.75 0 0 1 0 12.331V3.669a.75.75 0 0 1 .471-.696L7.443.184l.004-.001.274-.11a.75.75 0 0 1 .558 0l.274.11.004.001 6.971 2.789Zm-1.374.527L8 5.962 1.846 3.5 1 3.839v.4l6.5 2.6v7.922l.5.2.5-.2V6.84l6.5-2.6v-.4l-.846-.339Z"/>
-                  </svg><span class="d-none d-md-block">Notifications</span></a>
-                <a class="nav-link"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-fill" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M15.528 2.973a.75.75 0 0 1 .472.696v8.662a.75.75 0 0 1-.472.696l-7.25 2.9a.75.75 0 0 1-.557 0l-7.25-2.9A.75.75 0 0 1 0 12.331V3.669a.75.75 0 0 1 .471-.696L7.443.184l.004-.001.274-.11a.75.75 0 0 1 .558 0l.274.11.004.001 6.971 2.789Zm-1.374.527L8 5.962 1.846 3.5 1 3.839v.4l6.5 2.6v7.922l.5.2.5-.2V6.84l6.5-2.6v-.4l-.846-.339Z"/>
-                  </svg><span class="d-none d-md-block">Messages</span></a>
-                <a class="nav-link"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-fill" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M15.528 2.973a.75.75 0 0 1 .472.696v8.662a.75.75 0 0 1-.472.696l-7.25 2.9a.75.75 0 0 1-.557 0l-7.25-2.9A.75.75 0 0 1 0 12.331V3.669a.75.75 0 0 1 .471-.696L7.443.184l.004-.001.274-.11a.75.75 0 0 1 .558 0l.274.11.004.001 6.971 2.789Zm-1.374.527L8 5.962 1.846 3.5 1 3.839v.4l6.5 2.6v7.922l.5.2.5-.2V6.84l6.5-2.6v-.4l-.846-.339Z"/>
-                  </svg><span class="d-none d-md-block">Bookmarks</span></a>
-                <a class="nav-link"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-fill" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M15.528 2.973a.75.75 0 0 1 .472.696v8.662a.75.75 0 0 1-.472.696l-7.25 2.9a.75.75 0 0 1-.557 0l-7.25-2.9A.75.75 0 0 1 0 12.331V3.669a.75.75 0 0 1 .471-.696L7.443.184l.004-.001.274-.11a.75.75 0 0 1 .558 0l.274.11.004.001 6.971 2.789Zm-1.374.527L8 5.962 1.846 3.5 1 3.839v.4l6.5 2.6v7.922l.5.2.5-.2V6.84l6.5-2.6v-.4l-.846-.339Z"/>
-                  </svg><span class="d-none d-md-block">Lists</span></a>
-                <a class="nav-link"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-fill" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M15.528 2.973a.75.75 0 0 1 .472.696v8.662a.75.75 0 0 1-.472.696l-7.25 2.9a.75.75 0 0 1-.557 0l-7.25-2.9A.75.75 0 0 1 0 12.331V3.669a.75.75 0 0 1 .471-.696L7.443.184l.004-.001.274-.11a.75.75 0 0 1 .558 0l.274.11.004.001 6.971 2.789Zm-1.374.527L8 5.962 1.846 3.5 1 3.839v.4l6.5 2.6v7.922l.5.2.5-.2V6.84l6.5-2.6v-.4l-.846-.339Z"/>
-                  </svg><span class="d-none d-md-block">Profile</span></a>
-                <a class="nav-link"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-fill" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M15.528 2.973a.75.75 0 0 1 .472.696v8.662a.75.75 0 0 1-.472.696l-7.25 2.9a.75.75 0 0 1-.557 0l-7.25-2.9A.75.75 0 0 1 0 12.331V3.669a.75.75 0 0 1 .471-.696L7.443.184l.004-.001.274-.11a.75.75 0 0 1 .558 0l.274.11.004.001 6.971 2.789Zm-1.374.527L8 5.962 1.846 3.5 1 3.839v.4l6.5 2.6v7.922l.5.2.5-.2V6.84l6.5-2.6v-.4l-.846-.339Z"/>
-                  </svg><span class="d-none d-md-block">More</span></a>
-                <!-- <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Active</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled">Disabled</a>
-                  </li> -->
+                <a class="nav-link" aria-current="page" href="#">
+                    <i class="bi bi-house-door-fill"></i>
+                    <span class="d-none d-md-block">Home</span>
+                </a>
+                <a class="nav-link  active" href="#">
+                    <i style="font-weight:bold;">#</i>
+                    <span class="d-none d-md-block">Explore</span>
+                </a>
+                <a class="nav-link" href="#">
+                    <i class="bi bi-bell-fill"></i>
+                    <span class="d-none d-md-block">Notifications</span>
+                </a>
+                <a class="nav-link">
+                    <i class="bi bi-envelope-fill"></i>
+                    <span class="d-none d-md-block">Messages</span>
+                </a>
+                <a class="nav-link">
+                    <i class="bi bi-bookmark-fill"></i>
+                    <span class="d-none d-md-block">Bookmarks</span></a>
+                <a class="nav-link">
+                    <i class="bi bi-list-ul"></i>
+                    <span class="d-none d-md-block">Lists</span>
+                </a>
+                <a class="nav-link">
+                    <i class="bi bi-person-fill"></i>
+                    <span class="d-none d-md-block">Profile</span>
+                </a>
+                <a class="nav-link">
+                    <i class="bi bi-record-fill"></i>
+                    <span class="d-none d-md-block">More</span>
+                </a>
               </nav>
+              <button class="t_button">Tweet</button>
         </div>
         <div class="col-7">
             <div class="wd-A_container">
                 <div class="wd-A_search_box">
                     <div class="wd-A_search">
-                        <input type="text" placeholder="Search Twitter"/>
-                        <img src="./img/setting.svg"/>            
+                        <div class="wd-A_search_input">
+                            <i class="bi bi-search"></i>
+                            <input type="text" placeholder="Search Twitter"/>
+                        </div>
+                        <i class="bi bi-gear-fill"></i>           
                     </div>
                     <ul class="nav nav-tabs">
                         <li class="nav-item">
@@ -76,30 +80,8 @@
                           </li>
                       </ul>
                 </div>
-                <!-- <div class="wd-A_line"></div> -->
                 <div class="wd-A_content">
                     <img class="space" src="./img/space.png" alt="">
-                    <!-- <div class="wd-A_item_box">
-                        <div class="wd-A_item">
-                            <span>Trending in science</span>
-                            <p>StartShip</p>
-                            <span>55.5k Tweets</span>
-                        </div>
-                        <div class="wd-A_item">
-                            <span>Sport Trending</span>
-                            <p>Joe Rogan</p>
-                            <span>5,218 Tweets</span>
-                        </div>
-                    </div>
-                    <div class="wd-A_item_box wd-A_flex">
-                        <div class="wd-A_item">
-                            <div class="wd-A_left">
-                                <span class="wd-A_white">The New York Times · <span>Yesterday</span></span>
-                                <p>CNN's Cuomo conundrum: A star anchor with a brother in trouble</p>
-                            </div>
-                            <img src="./img/1.jpg" alt="">
-                        </div>
-                    </div> -->
                     <div class="wd-A_item_box wd-A_flex">
                         <div class="wd-A_item">
                             <div class="wd-A_left">
@@ -205,6 +187,6 @@
                 </div>
             </div>
         </div>
-      </div>
+    </div> -->
 </body>
 </html>
