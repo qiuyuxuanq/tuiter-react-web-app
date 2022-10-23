@@ -1,11 +1,16 @@
-import Assignment6 from "./a6";
-import Nav from "../nav";
-function Labs() {
- return (
-   <div>
-     <Nav/>
-     <Assignment6/>
-   </div>
- );
+import {Link}
+  from "react-router-dom";
+  import Classes from "./classes";
+
+function Assignment6() {
+ return(
+  <div>
+   <Link to="/">Lab</Link> |
+   <Link to="/hello">Hello</Link> |
+   <Link to="/tuiter">Tuiter</Link>
+   <h1>Assignment 6</h1>
+   <Classes/>
+  </div>
+ )
 }
-export default Labs;
+export default Assignment6;
