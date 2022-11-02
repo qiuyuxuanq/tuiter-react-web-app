@@ -36,3 +36,64 @@
     transform: rotate(360deg);
   }
 }
+
+
+.list-group-item {
+  border-bottom: 1px solid #333;
+}
+
+.list-group-item .header {
+  display: flex;
+  align-items: center;
+  color: #666;
+}
+
+.list-group-item .header .username {
+  font-weight: 550;
+  color: #000;
+}
+
+.list-group-item .header .icon-sec {
+  width: 18px;
+  height: 18px;
+  margin: 0 10px;
+}
+
+.list-group-item .content .message {
+  font-size: 18px;
+}
+
+.list-group-item .content .icon-box {
+  display: flex;
+  align-items: center;
+}
+
+.list-group-item .content .icon-box svg {
+  width: 18px;
+}
+
+.list-group-item .content .icon-item {
+  display: flex;
+  align-items: center;
+  margin-right: 50px;
+}
+
+.list-group-item .content .icon-item span {
+  margin-left: 5px;
+}
+
+
+.todo-box {
+
+}
+
+.todo-box .todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo-box .todo-item button {
+  margin-left: 20px;
+  flex: 0 0 80px;
+}
