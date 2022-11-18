@@ -1,26 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+// import logo from './logo.svg';
+import "./App.css";
+import Tuiter from "./tuiter";
+import Labs from "./labs";
+import HelloWorld from "./labs/a6/hello-world";
+import { BrowserRouter } from "react-router-dom";
+import { Routes, Route } from "react-router";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Welcome to Web Development Fall 2022
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <BrowserRouter>
+      <div className="container">
+        <Routes>
+          <Route path="/labs" element={<Labs />} />
+          <Route path="/hello" element={<HelloWorld />} />
+          <Route path="/tuiter" element={<Tuiter />} />
+          <Route path="/a6" element={<Labs />} />
+          <Route path="/*" element={<Labs />} />
 
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
-
 export default App;
